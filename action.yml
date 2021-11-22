@@ -1,4 +1,4 @@
-name: "kubectl-eks"
+name: "kubectleks"
 description: "Interacts with kubernetes clusters calling kubectl commands. Integrates support for AWS EKS."
 branding:
   icon: 'anchor'  
