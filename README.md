@@ -22,7 +22,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Trigger deploy
-        uses: APina03/EKSKUBECTL@master
+        uses: angela-mylo/EKSKUBECTL@master
         env:
           KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
         with:
@@ -50,7 +50,7 @@ jobs:
           aws-region: us-east-1
 
       - name: Trigger deploy
-        uses: APina03/EKSKUBECTL@master
+        uses: angela-mylo/EKSKUBECTL@master
         env:
           KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
         with:
@@ -88,7 +88,7 @@ Make sure your users has the proper IAM permissions to access your cluster and t
 ```yaml
       - name: Save container image
         id: image-save
-        uses: APina03/EKSKUBECTL@master
+        uses: angela-mylo/EKSKUBECTL@master
         env:
           KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
         with:
